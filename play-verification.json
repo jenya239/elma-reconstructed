@@ -1,0 +1,15 @@
+{
+  "result": "Passed",
+  "checks": [
+    "keyboard gas",
+    "turn edge and held repeat",
+    "pause",
+    "death",
+    "restart",
+    "level change",
+    "Enter only after finish",
+    "Enter starts next level",
+    "last level does not wrap"
+  ],
+  "levels_available": 54
+}

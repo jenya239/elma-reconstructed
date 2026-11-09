@@ -1,0 +1,6 @@
+{
+  "head_step_cases": 2000,
+  "max_abs_error": 1.9539925233402755e-14,
+  "function": "0x1400ce460",
+  "scope": "Full rider clamp and spring integration, no head terrain collision"
+}

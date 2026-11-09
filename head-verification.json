@@ -1,0 +1,6 @@
+{
+  "head_clamp_cases": 3000,
+  "max_abs_error": 1.7763568394002505e-15,
+  "function": "0x1400cecc0",
+  "scope": "Position clamp only; rider spring and head terrain collision not included"
+}

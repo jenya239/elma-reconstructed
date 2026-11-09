@@ -1,0 +1,7 @@
+{
+  "demos": 3,
+  "playback_samples": 9151,
+  "max_absolute_error": 0,
+  "columns": "all bytes identical to original loader",
+  "events": "all bytes identical to original loader"
+}

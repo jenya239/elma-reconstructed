@@ -1,0 +1,6 @@
+{
+  "volt_cases": 2500,
+  "max_abs_error": 0,
+  "original_range": "0x1400eab32..0x1400ead66",
+  "scope": "Core input pulses only; keyboard edge/repeat decoding not covered"
+}

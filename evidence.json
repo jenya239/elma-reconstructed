@@ -1,0 +1,390 @@
+{
+  "artifact": "elma.exe",
+  "sha256": "d2caa85701535b866fca6310320bc078a00571221ce6d02b1d7c525718d80d5a",
+  "method": "REA 6.8.0 / Ghidra 12.1.4, GNU objdump and isolated original x64 execution in Unicorn",
+  "functions": {
+    "free_step": "0x1400cdf50 zero-contact branch",
+    "suspension": "0x1400ea220",
+    "wheel_controls": "0x1400ea7f0 prefix through 0x1400eaa30",
+    "one_contact_step": "0x1400cdf50, 0x1400cea20, 0x1400ceb20",
+    "bike_step": "0x1400ea7f0",
+    "volt": "0x1400eab32..0x1400ead66",
+    "head_clamp": "0x1400cecc0",
+    "head_step": "0x1400ce460",
+    "terrain_grid": "0x140111c60 / 0x140111450 / 0x140111a40 / 0x140111c20",
+    "terrain_query": "0x14011a9b0",
+    "contact_response": "0x1400cdf50 / 0x1400ce7a0 / 0x1400ce8e0",
+    "placement": "0x14011a5e0",
+    "object_effect": "0x1400e9f60",
+    "held_input_gate": "0x1400e7fb0..0x1400e80f5",
+    "object_query": "0x14011ad40",
+    "object_collector": "0x1400eb770",
+    "event_enqueue": "0x14010e010",
+    "event_dequeue": "0x14010c540",
+    "replay_loader": "0x14010c790",
+    "replay_player": "0x14010d400",
+    "gameplay_tick": "0x1400e7fb0",
+    "turn_edge": "0x1400e8acc..0x1400e8b0e",
+    "reset_controls": "0x1400eb5d0",
+    "impact_events": "0x1400ceb20..0x1400cecb3",
+    "frame_partition": "0x1400e86e4..0x1400e8991",
+    "elapsed_timer": "0x14014eb50"
+  },
+  "verification": {
+    "free_step": {
+      "cases": 1000,
+      "max_abs_error": 0
+    },
+    "suspension": {
+      "cases": 1000,
+      "max_abs_error": 2.2351741790771484e-08
+    },
+    "wheel_controls": {
+      "cases": 1000,
+      "max_abs_error": 0
+    },
+    "one_contact": {
+      "cases": 2000,
+      "max_abs_error": 4.263256414560601e-14,
+      "terrain_query": "supplied point",
+      "impact_audio": "disabled"
+    },
+    "events": {
+      "collector_and_effect_scenarios": 400,
+      "collected_events": 825,
+      "terrain_death_cases": 24,
+      "fifo_capacity": 200,
+      "fifo_insertions": 250,
+      "result": "Exact status, ordered events, object active flags, apple counts and gravity"
+    },
+    "replay": {
+      "demos": 3,
+      "playback_samples": 9151,
+      "max_absolute_error": 0,
+      "columns": "all bytes identical to original loader",
+      "events": "all bytes identical to original loader"
+    },
+    "impact_events": {
+      "cases": 600,
+      "events": 566,
+      "max_event_value_error": 2.220446049250313e-16,
+      "threshold": 1.5,
+      "cap": 0.99
+    },
+    "session": {
+      "steps": 2691,
+      "events": 69,
+      "max_absolute_error": 2.9523050670832163e-12,
+      "scenarios": [
+        {
+          "level": "Warm Up",
+          "controls": "gas",
+          "steps": 324,
+          "dead": true,
+          "finished": false,
+          "apples": 0,
+          "events": 19
+        },
+        {
+          "level": "Warm Up",
+          "controls": "mixed",
+          "steps": 239,
+          "dead": true,
+          "finished": false,
+          "apples": 0,
+          "events": 1
+        },
+        {
+          "level": "Long Haul",
+          "controls": "gas",
+          "steps": 450,
+          "dead": false,
+          "finished": false,
+          "apples": 0,
+          "events": 7
+        },
+        {
+          "level": "Long Haul",
+          "controls": "mixed",
+          "steps": 238,
+          "dead": true,
+          "finished": false,
+          "apples": 0,
+          "events": 3
+        },
+        {
+          "level": "Islands in the Sky",
+          "controls": "gas",
+          "steps": 450,
+          "dead": false,
+          "finished": false,
+          "apples": 0,
+          "events": 2
+        },
+        {
+          "level": "Islands in the Sky",
+          "controls": "mixed",
+          "steps": 239,
+          "dead": true,
+          "finished": false,
+          "apples": 0,
+          "events": 1
+        },
+        {
+          "level": "Bounce Back",
+          "controls": "gas",
+          "steps": 450,
+          "dead": false,
+          "finished": false,
+          "apples": 0,
+          "events": 1
+        },
+        {
+          "level": "Bounce Back",
+          "controls": "mixed",
+          "steps": 237,
+          "dead": true,
+          "finished": false,
+          "apples": 0,
+          "events": 1
+        },
+        {
+          "level": "fixture: gravity 1",
+          "controls": "gas",
+          "steps": 12,
+          "dead": false,
+          "finished": false,
+          "apples": 1,
+          "events": 2
+        },
+        {
+          "level": "fixture: gravity 2",
+          "controls": "gas",
+          "steps": 12,
+          "dead": false,
+          "finished": false,
+          "apples": 1,
+          "events": 2
+        },
+        {
+          "level": "fixture: gravity 3",
+          "controls": "gas",
+          "steps": 12,
+          "dead": false,
+          "finished": false,
+          "apples": 1,
+          "events": 2
+        },
+        {
+          "level": "fixture: gravity 4",
+          "controls": "gas",
+          "steps": 12,
+          "dead": false,
+          "finished": false,
+          "apples": 1,
+          "events": 2
+        },
+        {
+          "level": "fixture: apple and finish",
+          "controls": "gas",
+          "steps": 1,
+          "dead": false,
+          "finished": true,
+          "apples": 1,
+          "events": 3
+        },
+        {
+          "level": "fixture: two apples and finish",
+          "controls": "gas",
+          "steps": 1,
+          "dead": false,
+          "finished": true,
+          "apples": 2,
+          "events": 5
+        },
+        {
+          "level": "fixture: locked finish",
+          "controls": "gas",
+          "steps": 12,
+          "dead": false,
+          "finished": false,
+          "apples": 0,
+          "events": 12
+        },
+        {
+          "level": "fixture: killer",
+          "controls": "gas",
+          "steps": 1,
+          "dead": true,
+          "finished": false,
+          "apples": 0,
+          "events": 1
+        },
+        {
+          "level": "fixture: apple, killer and finish",
+          "controls": "gas",
+          "steps": 1,
+          "dead": true,
+          "finished": true,
+          "apples": 1,
+          "events": 5
+        }
+      ],
+      "scope": "Execute complete original e7fb0 tick, with real terrain/objects/FIFO/effects.\nHost substitutes keyboard/config, allocation, CRT math, audio and replay sinks.\nTurn edges use the original outer-loop fragment e8acc..e8b0e before each tick.\n"
+    },
+    "runtime": {
+      "timer_cases": 100,
+      "partition_cases": 1000,
+      "substeps": 17739,
+      "result": "Exact times, substep sizes and ordering",
+      "scope": "Execute original timer and frame partition fragment, supplying tick sink."
+    },
+    "desktop_shell": {
+      "result": "Passed",
+      "checks": [
+        "keyboard gas",
+        "turn edge and held repeat",
+        "pause",
+        "death",
+        "restart",
+        "level change"
+      ],
+      "levels_available": 54
+    }
+  },
+  "trajectory_samples_per_scene": 201,
+  "trajectory_steps_per_scene": 200,
+  "trajectory_max_error": {
+    "fall": 0,
+    "gas": 7.105427357601002e-15,
+    "spring": 8.881784197001252e-16,
+    "ground": 2.6645352591003757e-15
+  },
+  "rea_evidence": {
+    "rider-step.json": "ev_af99a5f2cc512814686bb073b08735b10d8aaf19a651793abb601b433d05e1cf",
+    "placement.json": "ev_821c201193a307e385bde491f677b99e4a0cba040fcfa785fb7ee16a4fa29518",
+    "grid-insert.json": "ev_98fa8091c4f6d6e26c420a0670ee883bea8a1056171fb30ee60498f1dceb5fea",
+    "retain.json": "ev_4d89a991a272715ab12e19b8fb4a391081d92f1b5e037f706512b097ba44f153",
+    "head-constraint.json": "ev_47fba6e9ccb5dba9b6b5206fe254664270a19a8fbefb6500428c8e6dc11e49c1",
+    "push.json": "ev_7d0e5ef4204683125834784e92ab702878bdf00213f858a091359c24fad1c84b",
+    "broadphase-start.json": "ev_6089074f7b721f0ee8fb2a00125973c320d92610547de69ae50fafb3b364bf3a",
+    "object-step.json": "ev_b77fba616ecfaa97b666cab7ca73a6fb9c2590f4fb7f67a5f71ba96d3fdaf7c5",
+    "grid-build.json": "ev_150541e8821c05a68f67d107071b09691ecc07db460d9b8687c8ea13ee54f9b2",
+    "contact-pseudo.json": "ev_8bf70681809d31d9e54494bb176b97771481f4de109b384e0d2c8dccf7de5df4",
+    "terrain-query.json": "ev_e6d2c78507c439b81fc81381577fee4944eb51c71dfe721a82b2287538b6e86d",
+    "grid-constructor.json": "ev_a0569c438d03ecf32fad38bdba783e568a1dcaffcd67e017c1d9f4293d621b39",
+    "object-query.json": "ev_6401a9d952cf39114edc690608fd6887891e4dc9886d54919b714dbafa5620e0",
+    "prep-level.json": "ev_fe0e142af4eaa26c9bbba88b36d228fc132389fcd003c5e444fdea80ca2036ee",
+    "level-transform.json": "ev_23c85c6db575004e3c8fb5e202d481f3776c388e08ee8ecba3aadc6c773e6c41",
+    "objects-transform.json": "ev_9fe973011993cd47892d519d038280575d5900f259baefd50e7f6dd412ca6190",
+    "object-grid-coords.json": "ev_c64328c74c607dc4726afa36201dde44c9d2f211a94f72309961b5564b86ea12",
+    "core-pseudo.json": "ev_0b1863a45411fbf38564ff7a0d0dadce16252467d427659ae9b3425db62785d9",
+    "objects-prep.json": "ev_5e92bf16ecb1e74034aa761f968734d86be235b7f4bb79eed8f14ca5c6d36e64",
+    "object-effect.json": "ev_59c2efb164be37eb65f74fabad34f7a1a783b98fc07b829f1df04e8d5d80eb7f"
+  },
+  "verification_files": {
+    "bike-verification.json": {
+      "full_core_cases": 500,
+      "max_abs_error": 5.329070518200751e-15,
+      "function": "0x1400ea7f0",
+      "scope": "Full core, empty terrain query; all 4 gravity directions, gas/brake/volt/flip flags"
+    },
+    "head-verification.json": {
+      "head_clamp_cases": 3000,
+      "max_abs_error": 1.7763568394002505e-15,
+      "function": "0x1400cecc0",
+      "scope": "Position clamp only; rider spring and head terrain collision not included"
+    },
+    "terrain-verification.json": {
+      "grids": 40,
+      "queries": 2000,
+      "ordered_cell_lists": "exact match",
+      "max_abs_error": 5.329070518200751e-15,
+      "scope": "original grid construction + lookup + narrow phase; heap and memset supplied"
+    },
+    "world-verification.json": {
+      "directory_bytes": 72000,
+      "levels": 55,
+      "polygons": 1121,
+      "objects": 421,
+      "pictures": 1177,
+      "result": "Exact parsed values and consumed byte counts match original machine code"
+    },
+    "verification.json": {
+      "free_step": {
+        "cases": 1000,
+        "max_abs_error": 0
+      },
+      "suspension": {
+        "cases": 1000,
+        "max_abs_error": 2.2351741790771484e-08
+      },
+      "wheel_controls": {
+        "cases": 1000,
+        "max_abs_error": 0
+      }
+    },
+    "world-ride-verification.json": {
+      "level": "Warm Up",
+      "steps": 324,
+      "wheel_contacts_seen": 338,
+      "max_abs_error": 2.2382096176443156e-13,
+      "head_collision_time": 1.7819999999999998,
+      "scope": "Complete original bike core and original terrain grid/query; host sin/cos, TLS guards, heap, memset, sound substituted; fixed gas test schedule"
+    },
+    "input-verification.json": {
+      "cases": 2000,
+      "result": "Exact flags and cooldown time",
+      "scope": "Original held-key gate incl alternate brake and combined volt; turn edge statically traced only"
+    },
+    "collision-verification.json": {
+      "cases": 5000,
+      "by_contact_count": [
+        1667,
+        1667,
+        1666
+      ],
+      "max_abs_error": 9.769962616701378e-14,
+      "scope": "complete contact response, supplied points, muted impact audio"
+    },
+    "controls-verification.json": {
+      "volt_cases": 2500,
+      "max_abs_error": 0,
+      "original_range": "0x1400eab32..0x1400ead66",
+      "scope": "Core input pulses only; keyboard edge/repeat decoding not covered"
+    },
+    "head-step-verification.json": {
+      "head_step_cases": 2000,
+      "max_abs_error": 1.9539925233402755e-14,
+      "function": "0x1400ce460",
+      "scope": "Full rider clamp and spring integration, no head terrain collision"
+    },
+    "query-verification.json": {
+      "cases": 3000,
+      "by_contact_count": [
+        1352,
+        807,
+        841
+      ],
+      "max_abs_error": 0.0,
+      "merge_distance": 0.1,
+      "scope": "original narrow phase; ordered candidate iterator supplied"
+    },
+    "gameplay-verification.json": {
+      "placements": 55,
+      "object_effect_cases": 1000,
+      "result": "Exact original values/status; random animation phase and sound replaced"
+    },
+    "contact-verification.json": {
+      "one_contact": {
+        "cases": 2000,
+        "max_abs_error": 4.263256414560601e-14,
+        "terrain_query": "supplied point",
+        "impact_audio": "disabled"
+      }
+    }
+  },
+  "remaining": "Original window/menu lifecycle, fast mode, original rendering/audio, other REC versions and multiplayer. Normal frame partition is verified; Tk desktop shell is new.",
+  "replay_scope": "Three original single-rider REC v131 demos; state playback, not input-driven physics resimulation.",
+  "event_queue_correction": "0x14010e010 enqueues general events. Earlier physics tests omitted impact events via this hook; numerical physics comparisons remain valid."
+}

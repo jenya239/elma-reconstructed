@@ -1,0 +1,6 @@
+{
+  "full_core_cases": 500,
+  "max_abs_error": 5.329070518200751e-15,
+  "function": "0x1400ea7f0",
+  "scope": "Full core, empty terrain query; all 4 gravity directions, gas/brake/volt/flip flags"
+}

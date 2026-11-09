@@ -1,0 +1,8 @@
+{
+  "one_contact": {
+    "cases": 2000,
+    "max_abs_error": 4.263256414560601e-14,
+    "terrain_query": "supplied point",
+    "impact_audio": "disabled"
+  }
+}

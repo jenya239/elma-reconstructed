@@ -1,0 +1,7 @@
+{
+  "timer_cases": 100,
+  "partition_cases": 1000,
+  "substeps": 17739,
+  "result": "Exact times, substep sizes and ordering",
+  "scope": "Execute original timer and frame partition fragment, supplying tick sink."
+}

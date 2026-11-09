@@ -1,0 +1,8 @@
+{
+  "collector_and_effect_scenarios": 400,
+  "collected_events": 825,
+  "terrain_death_cases": 24,
+  "fifo_capacity": 200,
+  "fifo_insertions": 250,
+  "result": "Exact status, ordered events, object active flags, apple counts and gravity"
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+assets/
+*.exe
+*.res
+*.rec
+*.leb
+*.lev
+*.lgr
+original-world.json
+original-demos.json
+warm-up-ride.json
+trajectories.json
+.env
+.env.*

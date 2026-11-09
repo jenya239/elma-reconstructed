@@ -1,0 +1,7 @@
+{
+  "grids": 40,
+  "queries": 2000,
+  "ordered_cell_lists": "exact match",
+  "max_abs_error": 5.329070518200751e-15,
+  "scope": "original grid construction + lookup + narrow phase; heap and memset supplied"
+}

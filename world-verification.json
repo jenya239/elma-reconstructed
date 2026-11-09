@@ -1,0 +1,8 @@
+{
+  "directory_bytes": 72000,
+  "levels": 55,
+  "polygons": 1121,
+  "objects": 421,
+  "pictures": 1177,
+  "result": "Exact parsed values and consumed byte counts match original machine code"
+}

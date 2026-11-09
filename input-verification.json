@@ -1,0 +1,5 @@
+{
+  "cases": 2000,
+  "result": "Exact flags and cooldown time",
+  "scope": "Original held-key gate incl alternate brake and combined volt; turn edge statically traced only"
+}

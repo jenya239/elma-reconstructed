@@ -1,0 +1,7 @@
+{
+  "cases": 600,
+  "events": 566,
+  "max_event_value_error": 2.220446049250313e-16,
+  "threshold": 1.5,
+  "cap": 0.99
+}

@@ -1,0 +1,11 @@
+{
+  "cases": 3000,
+  "by_contact_count": [
+    1352,
+    807,
+    841
+  ],
+  "max_abs_error": 0.0,
+  "merge_distance": 0.1,
+  "scope": "original narrow phase; ordered candidate iterator supplied"
+}

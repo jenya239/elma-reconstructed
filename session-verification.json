@@ -1,0 +1,161 @@
+{
+  "steps": 2691,
+  "events": 69,
+  "max_absolute_error": 2.9523050670832163e-12,
+  "scenarios": [
+    {
+      "level": "Warm Up",
+      "controls": "gas",
+      "steps": 324,
+      "dead": true,
+      "finished": false,
+      "apples": 0,
+      "events": 19
+    },
+    {
+      "level": "Warm Up",
+      "controls": "mixed",
+      "steps": 239,
+      "dead": true,
+      "finished": false,
+      "apples": 0,
+      "events": 1
+    },
+    {
+      "level": "Long Haul",
+      "controls": "gas",
+      "steps": 450,
+      "dead": false,
+      "finished": false,
+      "apples": 0,
+      "events": 7
+    },
+    {
+      "level": "Long Haul",
+      "controls": "mixed",
+      "steps": 238,
+      "dead": true,
+      "finished": false,
+      "apples": 0,
+      "events": 3
+    },
+    {
+      "level": "Islands in the Sky",
+      "controls": "gas",
+      "steps": 450,
+      "dead": false,
+      "finished": false,
+      "apples": 0,
+      "events": 2
+    },
+    {
+      "level": "Islands in the Sky",
+      "controls": "mixed",
+      "steps": 239,
+      "dead": true,
+      "finished": false,
+      "apples": 0,
+      "events": 1
+    },
+    {
+      "level": "Bounce Back",
+      "controls": "gas",
+      "steps": 450,
+      "dead": false,
+      "finished": false,
+      "apples": 0,
+      "events": 1
+    },
+    {
+      "level": "Bounce Back",
+      "controls": "mixed",
+      "steps": 237,
+      "dead": true,
+      "finished": false,
+      "apples": 0,
+      "events": 1
+    },
+    {
+      "level": "fixture: gravity 1",
+      "controls": "gas",
+      "steps": 12,
+      "dead": false,
+      "finished": false,
+      "apples": 1,
+      "events": 2
+    },
+    {
+      "level": "fixture: gravity 2",
+      "controls": "gas",
+      "steps": 12,
+      "dead": false,
+      "finished": false,
+      "apples": 1,
+      "events": 2
+    },
+    {
+      "level": "fixture: gravity 3",
+      "controls": "gas",
+      "steps": 12,
+      "dead": false,
+      "finished": false,
+      "apples": 1,
+      "events": 2
+    },
+    {
+      "level": "fixture: gravity 4",
+      "controls": "gas",
+      "steps": 12,
+      "dead": false,
+      "finished": false,
+      "apples": 1,
+      "events": 2
+    },
+    {
+      "level": "fixture: apple and finish",
+      "controls": "gas",
+      "steps": 1,
+      "dead": false,
+      "finished": true,
+      "apples": 1,
+      "events": 3
+    },
+    {
+      "level": "fixture: two apples and finish",
+      "controls": "gas",
+      "steps": 1,
+      "dead": false,
+      "finished": true,
+      "apples": 2,
+      "events": 5
+    },
+    {
+      "level": "fixture: locked finish",
+      "controls": "gas",
+      "steps": 12,
+      "dead": false,
+      "finished": false,
+      "apples": 0,
+      "events": 12
+    },
+    {
+      "level": "fixture: killer",
+      "controls": "gas",
+      "steps": 1,
+      "dead": true,
+      "finished": false,
+      "apples": 0,
+      "events": 1
+    },
+    {
+      "level": "fixture: apple, killer and finish",
+      "controls": "gas",
+      "steps": 1,
+      "dead": true,
+      "finished": true,
+      "apples": 1,
+      "events": 5
+    }
+  ],
+  "scope": "Execute complete original e7fb0 tick, with real terrain/objects/FIFO/effects.\nHost substitutes keyboard/config, allocation, CRT math, audio and replay sinks.\nTurn edges use the original outer-loop fragment e8acc..e8b0e before each tick.\n"
+}
